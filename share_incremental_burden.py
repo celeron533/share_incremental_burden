@@ -4,13 +4,14 @@ import abc
 
 def redistribute_integer_dose_single_shot_by_weight(dose_by_beam: Dict, cGy_to_distribute: int) ->  Dict:
     """
+    Redistribute the given dose to the beams
 
     Args:
-        dose_by_beam (Dict): _
-        cGy_to_distribute (int): _description_
+        dose_by_beam (Dict): pairs of beams and doses
+        cGy_to_distribute (int): the dose that would be distributed to the beams above
 
     Returns:
-        Dict: _description_
+        Dict: pairs of beams and redistributed doses
     """
     redist = dict(dose_by_beam)
     sign = 1
